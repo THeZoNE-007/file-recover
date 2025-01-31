@@ -70,38 +70,6 @@ This Python script automates file recovery and carving using either **Scalpel** 
 
 ---
 
-## Code Details
-
-### Functions
-
-#### 1. `Scalpel()`
-- Executes the Scalpel tool with the provided input file, output directory, and configuration file.
-- Uses the `subprocess.run()` method to run Scalpel as a subprocess.
-
-#### 2. `MagicRescue()`
-- Executes the MagicRescue tool with the provided input file, output directory, and recipe.
-- Uses the `subprocess.run()` method to run MagicRescue as a subprocess.
-
-#### 3. Main Execution
-- Reads the tool name and other parameters from command-line arguments.
-- Calls the appropriate function (`Scalpel` or `MagicRescue`) based on the user's choice.
-
----
-
-## Example Commands
-
-### Using Scalpel
-```bash
-python main.py scalpel disk_image.dd /path/to/output /path/to/scalpel.conf
-```
-
-### Using MagicRescue
-```bash
-python main.py magicrescue disk_image.dd /path/to/output jpg
-```
-
----
-
 ## Notes
 
 1. **Permissions**: Both Scalpel and MagicRescue require root privileges. Ensure the script is executed with `sudo` if necessary.
