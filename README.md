@@ -54,16 +54,16 @@ This Python script automates file recovery and carving using either **Scalpel** 
 
 2. Run the script using the following command:
    ```bash
-   python main.py <tool_name> <input_file> <output_directory> <config_file>
+   python recovery.py <tool_name> <input_file> <output_directory> <config_file>
    ```
    Example for Scalpel:
    ```bash
-   python main.py scalpel disk_image.dd /path/to/output /path/to/scalpel.conf
+   python recovery.py scalpel disk_image.dd /path/to/output /path/to/scalpel.conf
    ```
 
    Example for MagicRescue:
    ```bash
-   python script_name.py magicrescue disk_image.dd /path/to/output recipe_name
+   python recovery.py magicrescue disk_image.dd /path/to/output recipe_name
    ```
 
 3. The script will execute the chosen tool and store the results in the specified output directory.
